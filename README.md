@@ -19,7 +19,7 @@ This project simulates a real-world **Security Operations Center (SOC)** scenari
 ## 🧱 Architecture
 
 ```
-┌──────────────────────┐      ICMP Flood (70+ pkts/5s)      ┌─────────────────────────┐
+┌──────────────────────┐      ICMP Flood (40+ pkts/5s)      ┌─────────────────────────┐
 │   Zorin OS VM        │  ════════════════════════════════>  │   Kali Linux (Target)   │
 │   (Attacker)         │                                     │   icmp_flood_detector.py│
 └──────────────────────┘                                     └────────────┬────────────┘
