@@ -131,7 +131,7 @@ The AI agent is configured on **Airia AI** using **NanoGPT 5** with a profession
 - **Strict JSON-only output** — no markdown, no filler, machine-readable
 - **10 security guardrails** — no attack instructions, no fabricated data, defensive only
 
-See the full system prompt: [`playbooks/soc_analyst_system_prompt.md`](playbooks/soc_analyst_system_prompt.md)
+See the full system prompt: [`playbooks/soc_analyst_system_prompt.md`](Playbooks/soc_analyst_system_prompt.md)
 
 ---
 
