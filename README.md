@@ -186,7 +186,9 @@ See the full system prompt: [`playbooks/soc_analyst_system_prompt.md`](Playbooks
 
 ## 📸 Screenshots
 
-> Add terminal screenshots and Airia AI response screenshots to a `screenshots/` folder to complete the POC demo.
+![executing the python code](screenshots/code.png)
+![sending icmp packets from attacker machine](screenshots/ping.png)
+![response from agent after attack](screenshots/alert.png)
 
 ---
 
