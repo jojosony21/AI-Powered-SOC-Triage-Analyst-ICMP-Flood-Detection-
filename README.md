@@ -10,7 +10,7 @@ This project simulates a real-world **Security Operations Center (SOC)** scenari
 
 1. An attacker machine (**Zorin OS VM**) launches an ICMP ping flood attack
 2. The target machine (**Kali Linux**) runs a Python detection script
-3. When **70+ simultaneous ICMP packets** are detected within a 5-second window, a structured JSON alert is generated
+3. When **40+ simultaneous ICMP packets** are detected within a 5-second window, a structured JSON alert is generated
 4. The alert is sent to an **AI SOC Triage Analyst** deployed on **Airia AI**, powered by **NanoGPT 5**
 5. The AI follows a **professional enterprise SOC playbook** (used as its system prompt) to analyze the alert and return a full structured triage report — including threat classification, MITRE ATT&CK mapping, risk scoring, and escalation recommendation
 
@@ -58,7 +58,7 @@ This project simulates a real-world **Security Operations Center (SOC)** scenari
 | Attack Source | Zorin OS VM |
 | Target / Detection | Kali Linux |
 | Detection Language | Python 3 |
-| Packet Capture | Scapy |
+| Analysis | Python(counter,CSV parsing |
 
 ---
 
@@ -113,7 +113,7 @@ sudo hping3 -1 --flood <KALI_IP>
 
 ### 3. Alert Flow
 
-Once 70+ ICMP packets are detected within 5 seconds, the script generates a structured JSON alert and forwards it to the Airia AI SOC Analyst agent, which responds with a complete triage report.
+Once 40+ ICMP packets are detected within 5 seconds, the script generates a structured JSON alert and forwards it to the Airia AI SOC Analyst agent, which responds with a complete triage report.
 
 ---
 
